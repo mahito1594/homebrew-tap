@@ -1,14 +1,14 @@
 class CscView < Formula
   desc "Salesforce package.xml viewer - displays metadata components in readable formats"
   homepage "https://github.com/mahito1594/changeset-component-viewer"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac? && Hardware::CPU.arm?
-      url "https://github.com/mahito1594/changeset-component-viewer/releases/download/v0.1.1/csc-view-aarch64-apple-darwin.tar.xz"
-      sha256 "a33717bc7f8ebed02752985398c540c63c7eaf02c7746671cd850755528140ba"
+      url "https://github.com/mahito1594/changeset-component-viewer/releases/download/v0.1.2/csc-view-aarch64-apple-darwin.tar.xz"
+      sha256 "fd934d6a359defcc1baaf54a7d38f468ca44121701a73bdb530c2bc0cdaff6d2"
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/mahito1594/changeset-component-viewer/releases/download/v0.1.1/csc-view-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "97ca85b7e39bfe788dc22965177d6db9bcf0bae0bc1fa9291305ba49315fce29"
+      url "https://github.com/mahito1594/changeset-component-viewer/releases/download/v0.1.2/csc-view-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "b828ba8bb49d23d1e3343991641d0975b739afd566e73b032155b29358582a97"
   end
   license "Unlicense"
 
