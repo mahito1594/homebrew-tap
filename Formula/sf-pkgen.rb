@@ -1,14 +1,14 @@
 class SfPkgen < Formula
   desc "Interactive Salesforce package.xml generator"
   homepage "https://github.com/mahito1594/sf-pkgen-rs"
-  version "1.1.0"
+  version "1.1.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.0/sf-pkgen-aarch64-apple-darwin.tar.xz"
-    sha256 "a7044b6a6f90acf40e9763812509aa3609f434a6a7422eec9ecc654faf557fcd"
+    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.1/sf-pkgen-aarch64-apple-darwin.tar.xz"
+    sha256 "f0a77a184d3ceb0d3f10a69e0bc1a9f95f287e8da663d01eed15fef12284e3a1"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.0/sf-pkgen-x86_64-unknown-linux-musl.tar.xz"
-    sha256 "cf562cb3f25de3d8d36b7e4c86937d1633f4260f15d4bb10695cd601161f47f4"
+    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.1/sf-pkgen-x86_64-unknown-linux-musl.tar.xz"
+    sha256 "4667ba0062852198c1247b4fbbde3ae2225c003b21b5c06b8b101ce391f31e47"
   end
   license "MIT"
 
