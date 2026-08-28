@@ -1,14 +1,14 @@
 class SfPkgen < Formula
   desc "Interactive Salesforce package.xml generator"
   homepage "https://github.com/mahito1594/sf-pkgen-rs"
-  version "1.1.1"
+  version "1.1.2"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.1/sf-pkgen-aarch64-apple-darwin.tar.xz"
-    sha256 "f0a77a184d3ceb0d3f10a69e0bc1a9f95f287e8da663d01eed15fef12284e3a1"
+    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.2/sf-pkgen-aarch64-apple-darwin.tar.xz"
+    sha256 "be7855c6f719a8f7948106f27a68372cfad18ff4c16a95a19f635404884efc69"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.1/sf-pkgen-x86_64-unknown-linux-musl.tar.xz"
-    sha256 "4667ba0062852198c1247b4fbbde3ae2225c003b21b5c06b8b101ce391f31e47"
+    url "https://github.com/mahito1594/sf-pkgen-rs/releases/download/v1.1.2/sf-pkgen-x86_64-unknown-linux-musl.tar.xz"
+    sha256 "5eec9a92cde2604407a5f664c43c603fbb5dc0aa82473e86bbdac071ed40815b"
   end
   license "MIT"
 
@@ -36,8 +36,12 @@ class SfPkgen < Formula
   end
 
   def install
-    bin.install "sf-pkgen" if OS.mac? && Hardware::CPU.arm?
-    bin.install "sf-pkgen" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "sf-pkgen"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "sf-pkgen"
+    end
 
     install_binary_aliases!
 
